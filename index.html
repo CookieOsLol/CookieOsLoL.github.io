@@ -1,18 +1,17 @@
-<!DOCTYPE html>
+<!DOCTYPEhtml> 
 <html>
-	<head>
-		<meta charset="utf-8">
-		<style>
-			body {
-				background-color: #ffffff;
-				margin: 0;
-				overflow: hidden;
-			}
-		</style>
-	</head>
-	<body>
-		
-		<script src="http://threejsplaygnd.brangerbriz.net/js/three.min.js"></script>
+  <head> 
+    <meta charset="utf-8">   
+     <title>Antony Bui</title>  
+     <link rel="stylesheet" type="text/css" href="main.css"> 
+    </head> 
+     <body>
+     <h1>Hello World -- This is my website!</h1>  
+     <p>I'm making this to host my portfolio for free. To learn more, read my <a href="statement.html">artist's statement.</a></p>
+       <iframe src="https://player.vimeo.com/video/233549593" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+       <iframe src="https://player.vimeo.com/video/235377282" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+         
+         <script src="http://threejsplaygnd.brangerbriz.net/js/three.min.js"></script>
 		<script src="http://threejsplaygnd.brangerbriz.net/js/Detector.js"></script>
 		<script>
 
@@ -25,7 +24,7 @@
 
 				var W = window.innerWidth, H = window.innerHeight;
 				renderer = new THREE.WebGLRenderer();
-				renderer.setSize( W, H );
+				renderer.setSize( 640, 360 );
 				document.body.appendChild( renderer.domElement );
 
 				camera = new THREE.PerspectiveCamera( 50, W/H, 1, 10000 );
@@ -35,7 +34,7 @@
 				
 				
 				// paste your code from the geometryGUI here
-				var points = [
+var points = [
     new THREE.Vector3( 100, 0, -40 ),
     new THREE.Vector3( 111.68, 0, -36 ),
     new THREE.Vector3( 121.52, 0, -32 ),
@@ -69,7 +68,6 @@ material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
 mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
 
-
 			}
 
 			function draw() {
@@ -84,11 +82,14 @@ scene.add(mesh);
 
 			setup();
 			draw();
-									mesh.rotation.x = Date.now() * 0.0005;	
-				mesh.rotation.y = Date.now() * 0.0002;	
-				mesh.rotation.z = Date.now() * 0.001;
 
 		</script>
+         
+         
+         <p> My project was about how certain sounds are similar to sounds made in songs. I was listening to a this song while thinking about what I should do for my film project and I realized that I had clips that fit to this song so I thought of ways to fit the beat.</p>
+       <p> My other video is a transition between two different scenes. I wanted to get a change of speed.</p>
+
+		
 		
 	</body>
-</html>
+ </html>
