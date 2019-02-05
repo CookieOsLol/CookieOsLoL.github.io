@@ -10,86 +10,12 @@
      <p>I'm making this to host my portfolio for free. To learn more, read my <a href="statement.html">artist's statement.</a></p>
        <iframe src="https://player.vimeo.com/video/233549593" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
        <iframe src="https://player.vimeo.com/video/235377282" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-         
-         <script src="http://threejsplaygnd.brangerbriz.net/js/three.min.js"></script>
-		<script src="http://threejsplaygnd.brangerbriz.net/js/Detector.js"></script>
-		<script>
-
-			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
-			
-			var camera, scene, renderer;
-			var geometry, material, mesh;
-
-			function setup() {
-
-				var W = window.innerWidth, H = window.innerHeight;
-				renderer = new THREE.WebGLRenderer();
-				renderer.setSize( 640, 360 );
-				document.body.appendChild( renderer.domElement );
-
-				camera = new THREE.PerspectiveCamera( 50, W/H, 1, 10000 );
-				camera.position.z = 500;
-
-				scene = new THREE.Scene();
-				
-				
-				// paste your code from the geometryGUI here
-var points = [
-    new THREE.Vector3( 100, 0, -40 ),
-    new THREE.Vector3( 111.68, 0, -36 ),
-    new THREE.Vector3( 121.52, 0, -32 ),
-    new THREE.Vector3( 127.96, 0, -28 ),
-    new THREE.Vector3( 129.99, 0, -24 ),
-    new THREE.Vector3( 127.28, 0, -20 ),
-    new THREE.Vector3( 120.26, 0, -16 ),
-    new THREE.Vector3( 110.05, 0, -12 ),
-    new THREE.Vector3( 98.25, 0, -8 ),
-    new THREE.Vector3( 86.72, 0, -4 ),
-    new THREE.Vector3( 77.3, 0, 0 ),
-    new THREE.Vector3( 71.45, 0, 4 ),
-    new THREE.Vector3( 70.12, 0, 8 ),
-    new THREE.Vector3( 73.5, 0, 12 ),
-    new THREE.Vector3( 81.06, 0, 16 ),
-    new THREE.Vector3( 91.62, 0, 20 ),
-    new THREE.Vector3( 103.5, 0, 24 ),
-    new THREE.Vector3( 114.82, 0, 28 ),
-    new THREE.Vector3( 123.81, 0, 32 ),
-    new THREE.Vector3( 129.04, 0, 36 ),
-    new THREE.Vector3( 129.68, 0, 40 ),
-    new THREE.Vector3( 125.64, 0, 44 ),
-    new THREE.Vector3( 117.55, 0, 48 ),
-    new THREE.Vector3( 106.69, 0, 52 ),
-    new THREE.Vector3( 94.77, 0, 56 ),
-    new THREE.Vector3( 83.68, 0, 60 ),
-];
-
-geometry = new THREE.LatheGeometry(points, 20);
-material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
-mesh = new THREE.Mesh(geometry, material);
-scene.add(mesh);
-
-			}
-
-			function draw() {
-
-				requestAnimationFrame( draw );
-				
-				// experiment with code from the snippets menu here
-
-				renderer.render( scene, camera );
-
-			}
-
-			setup();
-			draw();
-
-		</script>
-         
-         
-         <p> My project was about how certain sounds are similar to sounds made in songs. I was listening to a this song while thinking about what I should do for my film project and I realized that I had clips that fit to this song so I thought of ways to fit the beat.</p>
-       <p> My other video is a transition between two different scenes. I wanted to get a change of speed.</p>
-
-		
+     <p> My project was about how certain sounds are similar to sounds made in songs. I was listening to a this song while thinking about what I should do for my film project and I realized that I had clips that fit to this song so I thought of ways to fit the beat.<p>
+       <p> My other video is a transition between two different scenes. I wanted to get a change of speed.
+     </body>
+	<head>
+<iframe srcs="sketch.html"></iframe>
 		
 	</body>
  </html>
+
